@@ -190,6 +190,10 @@ namespace Player
 		player_model->setTrippleFireState(false);
 	}
 
+	PlayerController::PlayerModel()
+	{
+	}
+
 	void PlayerController::processPlayerInput()
 	{
 		EventService* event_service = ServiceLocator::getInstance()->getEventService();

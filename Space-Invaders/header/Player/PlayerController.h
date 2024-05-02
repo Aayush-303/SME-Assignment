@@ -17,8 +17,11 @@ namespace Player
         float elapsed_fire_duration;
         float elapsed_freez_duration;
 
-        PlayerView* player_view;
-        PlayerModel* player_model;
+        //PlayerView* player_view;
+        //PlayerModel* player_model;
+
+        std::unique_ptr<PlayerView> player_view;
+        std::unique_ptr<PlayerModel> player_model;
 
         void processPlayerInput();
         void moveLeft();
